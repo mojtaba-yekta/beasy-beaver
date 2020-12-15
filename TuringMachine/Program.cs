@@ -18,7 +18,6 @@ namespace TuringMachine
                 }
             }
             while (keyinfo.Key != ConsoleKey.Escape);
-            BB.Stop();
         }
     }
 }

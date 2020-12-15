@@ -26,12 +26,14 @@ namespace TuringMachine
             headPosition = 0;
             pause = true;
             stop = false;
-            if (cards == null || cards.Count == 0)
-                return;
         }
 
         public void Start()
         {
+            if (cards == null || cards.Count == 0)
+                return;
+
+            Console.WriteLine("Start Calculation.");
             new Task(() =>
             {
                 pause = false;
@@ -47,6 +49,7 @@ namespace TuringMachine
         {
             stop = true;
             pause = true;
+            Console.WriteLine("Stop Calculation.");
         }
 
         public void TogglePause()
@@ -108,7 +111,11 @@ namespace TuringMachine
 
         void NextStep()
         {
-            if (currentCard != null && !pause)
+            if (currentCard == null)
+            {
+                Stop();
+            }
+            else if (!pause)
             {
                 PrintStep();
                 step++;
