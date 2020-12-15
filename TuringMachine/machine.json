@@ -1,0 +1,30 @@
+﻿{
+  "StartPoint": "A",
+  "Cards": [
+    {
+      "Name": "A",
+      "State0": "C1L",
+      "State1": "E1L"
+    },
+    {
+      "Name": "B",
+      "State0": "H1L",
+      "State1": "D1L"
+    },
+    {
+      "Name": "C",
+      "State0": "D1R",
+      "State1": "D0L"
+    },
+    {
+      "Name": "D",
+      "State0": "A1L",
+      "State1": "E1R"
+    },
+    {
+      "Name": "E",
+      "State0": "B0L",
+      "State1": "C0R"
+    }
+  ]
+}
